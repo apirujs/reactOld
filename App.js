@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet ,Button ,TouchableOpacity } from 'react-native';
 //import {BrowserRouter,Routes,Route,Link} from 'react-router-dom';
+import MenuButton from './custom.js';
 
 const Home = () => (
 
@@ -8,6 +9,7 @@ const Home = () => (
     <View style={styles.menu}>
       <TouchableOpacity style={styles.menuButton} > <Text style={styles.menuButtonText}>Menu 1</Text></TouchableOpacity>
       <TouchableOpacity style={styles.menuButton} > <Text style={styles.menuButtonText}>Menu 2</Text></TouchableOpacity>
+      <MenuButton style={styles.menuButton} title='Menu 3'/>
     </View>
     <View style={styles.body}>
       <Text>C 1</Text>
@@ -50,6 +52,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderColor: '#dadada',
     borderRightWidth: 1,
+    Text:{color: '#003e9b',
+          alignItems: 'center',
+    },
   },
   menuButtonText : {
     color: '#003e9b',
